@@ -1,3 +1,4 @@
+import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './modules/users/users.module';
 import { StatisticModule } from './statistic/statistic.module';
 import { forwardRef, Module } from "@nestjs/common";
@@ -9,7 +10,6 @@ import { Agent } from './models/agent.entity';
 import { User } from './models/user.entity';
 import { Route } from './models/route.entity';
 import { Order } from './models/order.entity';
-import { AuthModule } from './auth/auth.module';
 @Module({
     controllers: [AppController],
     providers: [AppService],

@@ -9,12 +9,10 @@ import { Agent } from './models/agent.entity';
 import { User } from './models/user.entity';
 import { Route } from './models/route.entity';
 import { Order } from './models/order.entity';
-import { AuthModule } from './auth/auth.module';
 @Module({
     controllers: [AppController],
     providers: [AppService],
     imports: [
-        AuthModule,
         UsersModule,
         StatisticModule,
         TypeOrmModule.forRoot({

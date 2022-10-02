@@ -17,7 +17,7 @@ async function start() {
         .addTag('Аренда катеров')
         .addBearerAuth(
             { type: 'http', scheme: 'bearer', bearerFormat: 'JWT', in: 'header' },
-            'super-secret-cat',
+            'access-token',
         )
         .build();
     const document = SwaggerModule.createDocument(app, options, {

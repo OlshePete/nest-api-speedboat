@@ -15,10 +15,6 @@ async function start() {
         .setDescription('The rest API for the Speedboats rent service & db')
         .setVersion('1.0')
         .addTag('Аренда катеров')
-        .addBearerAuth(
-            { type: 'http', scheme: 'bearer', bearerFormat: 'JWT', in: 'header' },
-            'super-secret-cat',
-        )
         .build();
     const document = SwaggerModule.createDocument(app, options, {
         extraModels: [Speedboat, Agent, User, Route, Order],

@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "login":"admin",
+        "password":"admin"
+    },
+    {
+        "id": 2,
+        "login":"agent",
+        "password":"agent"
+    },
+    {
+        "id": 3,
+        "login":"customer",
+        "password":"customer"
+    }
+]

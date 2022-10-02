@@ -37,9 +37,9 @@ export class StatisticService {
         `);
         return res;
     }
-    async createOrder(order_date: string, order_event_date: string, route_id: number) {
+    async createOrder(order_date: string, order_event_date: string, route_id: number, user_id: number, agent_id: number) {
         const res = await this.database.query(`
-            INSERT INTO order (order_date, order_event_date, route_id, user_id, agent_id) VALUES ('${order_date}','${order_event_date}',${route_id})
+            INSERT INTO order (order_date, order_event_date, route_id, user_id, agent_id) VALUES ('${order_date}','${order_event_date}',${route_id},${user_id},${agent_id})
         `);
         return res;
     }
