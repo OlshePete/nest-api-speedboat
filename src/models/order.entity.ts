@@ -10,7 +10,7 @@ export class Order {
     order_date: string;
 
     @Column()
-    order_event_date: number;
+    order_event_date: string;
 
     @Column()
     route_id: number;
@@ -19,5 +19,14 @@ export class Order {
     user_id: number;
 
     @Column()
+    total_persons: number;
+
+    @Column()
     agent_id: number;
+
+    @Column({ default: false })
+    is_paid: boolean;
+
+    @Column({ default: false })
+    is_exec: boolean;
 }

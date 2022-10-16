@@ -22,5 +22,17 @@
         "login":"pete",
         "password":"pete",
         "role":"admin"
+    },
+    {
+        "id": 5,
+        "login":"agent1",
+        "password":"agent1",
+        "role":"agent"
+    },
+    {
+        "id": 6,
+        "login":"agent2",
+        "password":"agent2",
+        "role":"agent"
     }
 ]

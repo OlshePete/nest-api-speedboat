@@ -11,4 +11,7 @@ export class Route {
 
     @Column()
     route_time: number;
+
+    @Column()
+    route_cost: number;
 }

@@ -10,7 +10,7 @@ export class Agent {
     agent_name: string;
 
     @Column()
-    agent_phone: number;
+    agent_phone: string;
 
     @Column()
     agent_ratio: number;

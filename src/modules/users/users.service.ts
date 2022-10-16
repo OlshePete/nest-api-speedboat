@@ -17,13 +17,11 @@ export class UsersService {
     getAllUsers() {
         return [{ id: 1, name: "Peter Olshevskii" }]
     }
-    async createUser(user_name: string, user_phone: string, order_id: number) {
+    async createUser(user_name: string, user_phone: string) {
         const res = await this.database.query(`
-            INSERT INTO user(user_name, user_phone, order_id) 
-            VALUES('${user_name}', '${user_phone}', ${order_id})
+            INSERT INTO user(user_name, user_phone) 
+            VALUES('${user_name}', '${user_phone}')
         `);
         return res;
-
-        return [{ 'user_name': user_name, 'user_phone': user_phone, 'order_id': order_id }]
     }
 }

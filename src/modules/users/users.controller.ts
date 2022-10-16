@@ -20,6 +20,6 @@ export class UsersController {
     @ApiResponse({ status: 200, type: User })
     @Post('create')
     createUsers(@Body() userDto: CreateUserDto) {
-        return this.appService.createUser(userDto.user_name, userDto.user_phone, userDto.order_id)
+        return this.appService.createUser(userDto.user_name, userDto.user_phone)
     }
 }
