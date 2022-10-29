@@ -1,9 +1,9 @@
 [
     {
         "id": 1,
-        "login":"admin",
-        "password":"admin",
-        "role":"admin"
+        "login":"customer",
+        "password":"customer",
+        "role":"customer"
     },
     {
         "id": 2,
@@ -13,9 +13,9 @@
     },
     {
         "id": 3,
-        "login":"customer",
-        "password":"customer",
-        "role":"customer"
+        "login":"admin",
+        "password":"admin",
+        "role":"admin"
     },
     {
         "id": 4,

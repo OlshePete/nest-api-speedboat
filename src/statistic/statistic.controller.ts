@@ -31,6 +31,16 @@ export class StatisticController {
     getAllUsers() {
         return this.statisticService.getAllUsers();
     }
+    @Get("all-agents")
+    @ApiOperation({ summary: "Получить всех агентов" })
+    getAllAgent() {
+        return this.statisticService.getAllAgent();
+    }
+    @Get("all-orders")
+    @ApiOperation({ summary: "Получить все заказы" })
+    getAllOrder() {
+        return this.statisticService.getAllOrder();
+    }
     @ApiOperation({ summary: "Добавление новых клиентов" })
     @ApiResponse({ status: 200, type: User })
     @Post("create-user")
