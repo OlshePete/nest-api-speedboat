@@ -7,7 +7,7 @@ WORKDIR /service/src/app
 # dependencies
 COPY package*.json ./
 
-RUN npm i
+RUN npm install
 
 # source code
 COPY . .
