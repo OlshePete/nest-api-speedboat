@@ -1,5 +1,6 @@
 # Build stage (LTS Node.js, for more information see https://nodejs.org/en/about/releases/)
-FROM node:v16.13.0
+FROM node:12.19.0-alpine3.9
+
 RUN apk add --no-cache bash
 
 RUN addgroup -S service && adduser -S service -G service -h /service -s /bin/bash -u 1001
