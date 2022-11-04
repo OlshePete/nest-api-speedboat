@@ -7,12 +7,12 @@ WORKDIR /service/src/app
 # dependencies
 COPY package*.json ./
 
-RUN npm install
+RUN npm install --force
 
 # source code
 COPY . .
 
-RUN npm run build
+RUN npm run start
 
 EXPOSE 5000
 
