@@ -27,7 +27,7 @@ ENV PATH /service/node_modules/.bin:$PATH
 # COPY nodemon.json ./
 
 COPY . .
-
+RUN npm install better-sqlite3
 RUN npm run start:dev
 
 EXPOSE 5555
