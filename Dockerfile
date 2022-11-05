@@ -3,7 +3,7 @@ FROM node:16.13.0-alpine
 
 RUN apk add --no-cache bash
 
-RUN apk add python3 make gcc --virtual .build-deps musl-dev
+RUN apk add python3 make gcc --virtual .build-deps musl-dev g++
 
 RUN addgroup -S service && adduser -S service -G service -h /service -s /bin/bash -u 1001
 
