@@ -3,6 +3,8 @@ FROM node:16.13.0-alpine
 
 RUN apk add --no-cache bash
 
+RUN apk add python3
+
 RUN addgroup -S service && adduser -S service -G service -h /service -s /bin/bash -u 1001
 
 # set current user
@@ -11,8 +13,6 @@ USER service
 WORKDIR /service
 # dependencies
 COPY package.json ./
-
-RUN apk add python3
 
 RUN npm install
 
