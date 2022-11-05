@@ -28,9 +28,10 @@ ENV PATH /service/node_modules/.bin:$PATH
 
 COPY . .
 
-RUN npm run start:dev
+# RUN npm run start:dev
 
-EXPOSE 5555
+# EXPOSE 5555
 
-ENTRYPOINT ["node","index", "--exec", "babel-node"]
+# ENTRYPOINT ["node","index", "--exec", "babel-node"]
+CMD ["npm","run", "start:dev"]
 
