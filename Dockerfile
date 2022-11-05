@@ -19,18 +19,18 @@ RUN npm install --force
 ENV PATH /service/node_modules/.bin:$PATH
 
 # source code
-COPY src ./src
-COPY index.js ./
-COPY .babelrc ./
-COPY jsconfig.json ./
-COPY nest-cli.json ./
-COPY nodemon.json ./
+# COPY src ./src
+# COPY index.js ./
+# COPY .babelrc ./
+# COPY jsconfig.json ./
+# COPY nest-cli.json ./
+# COPY nodemon.json ./
 
-# COPY . .
+COPY . .
 
-RUN npm run start
+RUN npm run start:dev
 
-EXPOSE 5000
+EXPOSE 5555
 
 ENTRYPOINT ["node","index", "--exec", "babel-node"]
 
