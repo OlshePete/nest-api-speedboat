@@ -3,7 +3,7 @@ FROM node:16.13.0-alpine
 
 RUN apk add --no-cache bash
 
-RUN apk add python3
+RUN apk add python3-dev
 
 RUN addgroup -S service && adduser -S service -G service -h /service -s /bin/bash -u 1001
 
@@ -21,12 +21,6 @@ RUN npm install
 ENV PATH /service/node_modules/.bin:$PATH
 
 # source code
-# COPY src ./src
-# COPY index.js ./
-# COPY .babelrc ./
-# COPY jsconfig.json ./
-# COPY nest-cli.json ./
-# COPY nodemon.json ./
 
 COPY . .
 
