@@ -21,7 +21,7 @@ import { AuthModule } from './auth/auth.module';
             name: 'connection1',
             type: 'better-sqlite3',
             // IN-MEMORY DATABASE
-            database: 'speedboat_db',
+            database: 'data/speedboat_db',
             // database: 'speedboatDB',
             entities: [Speedboat, Agent, User, Route, Order],
             autoLoadEntities: true,
